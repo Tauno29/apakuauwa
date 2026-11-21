@@ -1,38 +1,54 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import About from "@/pages/About";
+import Contact from "@/pages/Contact";
+import Home from "@/pages/Home";
+import Shop from "@/pages/Shop";
+import { CartProvider } from "./contexts/CartContext";
+import SiteLayout from "./components/site/SiteLayout";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
+
+const PAGE_TITLES: Record<string, string> = {
+  "/": "Apaku Awua Investments CC — Fresh Fruits & Vegetables",
+  "/shop": "Shop Fresh Produce — Apaku Awua",
+  "/about": "About Us — Apaku Awua Investments CC",
+  "/contact": "Contact & Hours — Apaku Awua",
+  "/404": "404 — Page not found",
+};
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
+  const [path] = useLocation();
+  useEffect(() => {
+    document.title = PAGE_TITLES[path] ?? PAGE_TITLES["/404"];
+  }, [path]);
+
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <SiteLayout>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/shop" component={Shop} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/404" component={NotFound} />
+        <Route component={NotFound} />
+      </Switch>
+    </SiteLayout>
   );
 }
-
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster />
-          <Router />
+          <CartProvider>
+            <Toaster />
+            <Router />
+          </CartProvider>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

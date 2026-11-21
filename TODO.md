@@ -1,0 +1,21 @@
+# ToDo
+
+- [x] Responsive home page matching the reference brand and landing-page content
+  - Recreated Apaku Awua Investments CC's fresh-produce home page responsively, closely matching the reference's branding, navigation, cream/green/yellow palette, typography, imagery, spacing, and visual hierarchy.
+  - Preserved the hero message “Your one-stop shop for fresh produce.”, “Fresh, Healthy, Quality” badge, supporting produce-and-WhatsApp-ordering copy, “Start your order →” CTA, phone CTA, storefront image, and “Quality · Freshness · Affordability” badge.
+  - Preserved the “What we offer” section with Fresh Fruits, Fresh Vegetables, Beans, and Dry Fruits, and the “Order in 3 easy steps” section and its three instruction lines.
+  - Kept the opening-hours information visible: Monday – Friday 08:00 – 17:00; Saturday 08:30 – 13:30; Sunday Closed.
+- [x] Shop catalog and product selection
+  - Provided Shop page navigation and a fresh-produce catalog with category filters All, Fruits, Vegetables, Beans, and Dry Fruits.
+  - Included all reference products and units: Oranges (pocket), Apples (kg), Bananas (bunch), Pineapples (each), Grapes (punnet), Potatoes (pocket), Cabbage (head), Garlic (pack), Onions (pocket), Tomatoes (kg), Carrots (kg), Peppers (kg), Dry Beans (kg), and Mixed Dry Fruits (pack).
+  - Preserved the note that customers add items to their basket and today's prices are confirmed on WhatsApp; implemented add-to-basket selection and verified category filtering.
+- [x] Basket quantity review and WhatsApp order handoff
+  - Let customers review chosen items and quantities, change quantities, and remove items; show an empty-basket message when there are no items.
+  - Generate a WhatsApp order message that includes each selected product, quantity, and unit and opens WhatsApp to the original business number (+264814307010) for order confirmation.
+- [x] About, contact, and hours information
+  - Included the About page headline “Health is wealth.”, the community/provenance copy about fresh fruits, vegetables, beans, and dry fruits, and the Quality / Freshness / Affordability brand values.
+  - Included Contact page copy, calling links for 0814307010 and 0814306048, Monday – Friday 08:00 – 17:00, Saturday 08:30 – 13:30, and Sunday Closed.
+  - Kept the contact message field and WhatsApp handoff that opens with the customer's message ready to send.
+- [x] Shared navigation and footer
+  - Provided responsive Home, Shop, About, Contact, and Basket navigation throughout the site, with working links and accessible mobile navigation.
+  - Preserved the business name, tagline, call/WhatsApp information, opening hours, and copyright year in the footer.
