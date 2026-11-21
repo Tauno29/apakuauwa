@@ -21,16 +21,16 @@ export const CATEGORIES: Array<"All" | ProductCategory> = [
 ];
 
 export const CATALOG: Product[] = [
-  { id: "onions", name: "Onions", category: "Vegetables", unit: "pocket", image: "/manus-storage/oranges_634434d6.png", imageAlt: "Oranges photo used for the Onions listing" },
-  { id: "apples", name: "Apples", category: "Fruits", unit: "kg", image: "/manus-storage/produce-stand_7513b9aa.png", imageAlt: "Apples arranged with fresh produce on a stand" },
-  { id: "grapes", name: "Grapes", category: "Fruits", unit: "bag", price: 20, image: "/manus-storage/grapes_37500ee3.jpg", imageAlt: "Bags of fresh red and green grapes" },
-  { id: "potatoes", name: "Potatoes", category: "Vegetables", unit: "7 kg bag", price: 110, image: "/manus-storage/potatoes-7kg_e228c75d.jpg", imageAlt: "Potato sack labeled 7 kg", imageFit: "contain" },
-  { id: "potatoes-10kg", name: "Potatoes", category: "Vegetables", unit: "10 kg bag", price: 155, image: "/manus-storage/potatoes_c894c14b.png", imageAlt: "Fresh potatoes for the 10 kg bag listing" },
-  { id: "cabbage", name: "Cabbage", category: "Vegetables", unit: "head", price: 20, priceMax: 25, image: "/manus-storage/produce-stand_7513b9aa.png", imageAlt: "Fresh green cabbages displayed on a produce stand" },
-  { id: "garlic", name: "Garlic", category: "Vegetables", unit: "bag", price: 10, image: "/manus-storage/garlic_6607c31c.png", imageAlt: "Fresh garlic packed for sale" },
-  { id: "tomatoes", name: "Tomato crate", category: "Vegetables", unit: "crate", price: 330, image: "/manus-storage/tomatoes_36fa101f.jpg", imageAlt: "Fresh tomatoes displayed in produce trays", imageFit: "contain" },
-  { id: "carrots", name: "Carrots", category: "Vegetables", unit: "kg", image: "/manus-storage/carrots_664513cc.jpg", imageAlt: "Bagged fresh carrots" },
-  { id: "dates", name: "Dates", category: "Dry Fruits", unit: "bag", price: 10, image: "/manus-storage/dates_9cd27fe8.jpg", imageAlt: "Fresh dates packed in clear trays", imageFit: "contain" },
+  { id: "onions", name: "Onions", category: "Vegetables", unit: "pocket", image: "/images/oranges.png", imageAlt: "Oranges photo used for the Onions listing" },
+  { id: "apples", name: "Apples", category: "Fruits", unit: "kg", image: "/images/produce-stand.png", imageAlt: "Apples arranged with fresh produce on a stand" },
+  { id: "grapes", name: "Grapes", category: "Fruits", unit: "bag", price: 20, image: "/images/grapes.jpg", imageAlt: "Bags of fresh red and green grapes" },
+  { id: "potatoes", name: "Potatoes", category: "Vegetables", unit: "7 kg bag", price: 110, image: "/images/potatoes-7kg.jpg", imageAlt: "Potato sack labeled 7 kg", imageFit: "contain" },
+  { id: "potatoes-10kg", name: "Potatoes", category: "Vegetables", unit: "10 kg bag", price: 155, image: "/images/potatoes.png", imageAlt: "Fresh potatoes for the 10 kg bag listing" },
+  { id: "cabbage", name: "Cabbage", category: "Vegetables", unit: "head", price: 20, priceMax: 25, image: "/images/produce-stand.png", imageAlt: "Fresh green cabbages displayed on a produce stand" },
+  { id: "garlic", name: "Garlic", category: "Vegetables", unit: "bag", price: 10, image: "/images/garlic.png", imageAlt: "Fresh garlic packed for sale" },
+  { id: "tomatoes", name: "Tomato crate", category: "Vegetables", unit: "crate", price: 330, image: "/images/tomatoes.jpg", imageAlt: "Fresh tomatoes displayed in produce trays", imageFit: "contain" },
+  { id: "carrots", name: "Carrots", category: "Vegetables", unit: "kg", image: "/images/carrots.jpg", imageAlt: "Bagged fresh carrots" },
+  { id: "dates", name: "Dates", category: "Dry Fruits", unit: "bag", price: 10, image: "/images/dates.jpg", imageAlt: "Fresh dates packed in clear trays", imageFit: "contain" },
   { id: "maize", name: "Maize", category: "Grains", unit: "50 kg bag", price: 350 },
 ];
 

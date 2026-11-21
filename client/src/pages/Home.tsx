@@ -30,7 +30,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <img className="hero-photo" src="/manus-storage/storefront_8db7a994.png" alt="Apaku Awua Investments CC fresh produce shop front" />
+            <img className="hero-photo" src="/images/storefront.png" alt="Apaku Awua Investments CC fresh produce shop front" />
             <div className="hero-stamp">Quality · Freshness · Affordability</div>
           </div>
         </div>
@@ -52,10 +52,10 @@ export default function Home() {
           ))}
         </div>
         <div className="produce-strip">
-          <img src="/manus-storage/produce-stand_7513b9aa.png" alt="Fresh apples, cabbage, and potatoes arranged on a wooden produce stand" loading="lazy" />
-          <img src="/manus-storage/potatoes_c894c14b.png" alt="Fresh potatoes, hand-picked for quality" loading="lazy" />
-          <img src="/manus-storage/oranges_634434d6.png" alt="Fresh oranges packed in mesh bags" loading="lazy" />
-          <img src="/manus-storage/garlic_6607c31c.png" alt="Fresh garlic packed for customers" loading="lazy" />
+          <img src="/images/produce-stand.png" alt="Fresh apples, cabbage, and potatoes arranged on a wooden produce stand" loading="lazy" />
+          <img src="/images/potatoes.png" alt="Fresh potatoes, hand-picked for quality" loading="lazy" />
+          <img src="/images/oranges.png" alt="Fresh oranges packed in mesh bags" loading="lazy" />
+          <img src="/images/garlic.png" alt="Fresh garlic packed for customers" loading="lazy" />
         </div>
       </section>
 

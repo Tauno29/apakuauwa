@@ -4,7 +4,7 @@ import { Menu, Phone, ShoppingBasket, X } from "lucide-react";
 import { BUSINESS } from "@/data/catalog";
 import { useCart } from "@/contexts/CartContext";
 
-const LOGO = "/manus-storage/logo_d028daf8.png";
+const LOGO = "/images/apakuawua-logo.png";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/shop", label: "Shop" },
