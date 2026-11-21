@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { CATALOG } from "@/data/catalog";
 
 export type CartEntry = { id: string; quantity: number };
 
@@ -12,14 +13,22 @@ type CartContextValue = {
 
 const CartContext = createContext<CartContextValue | null>(null);
 const STORAGE_KEY = "apaku-awua-basket-v1";
+const PRODUCT_IDS = new Set(CATALOG.map((product) => product.id));
 
 function readBasket(): CartEntry[] {
   try {
     const saved: unknown = JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "[]");
     if (!Array.isArray(saved)) return [];
-    return saved.filter((line): line is CartEntry =>
-      typeof line?.id === "string" && Number.isInteger(line?.quantity) && line.quantity > 0,
-    );
+
+    const merged = new Map<string, number>();
+    for (const line of saved) {
+      if (typeof line?.id !== "string" || !Number.isInteger(line?.quantity) || line.quantity <= 0) continue;
+      const id = line.id === "oranges" ? "onions" : line.id;
+      if (!PRODUCT_IDS.has(id)) continue;
+      merged.set(id, (merged.get(id) || 0) + line.quantity);
+    }
+
+    return Array.from(merged, ([id, quantity]) => ({ id, quantity }));
   } catch {
     return [];
   }

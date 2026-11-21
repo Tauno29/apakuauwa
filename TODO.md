@@ -6,13 +6,15 @@
   - Preserved the “What we offer” section with Fresh Fruits, Fresh Vegetables, Beans, and Dry Fruits, and the “Order in 3 easy steps” section and its three instruction lines.
   - Kept the opening-hours information visible: Monday – Friday 08:00 – 17:00; Saturday 08:30 – 13:30; Sunday Closed.
 - [x] Shop catalog, confirmed prices, and product imagery
-  - Provided Shop page navigation, category filters All, Fruits, Vegetables, Beans, Dry Fruits, and Grains, and retained the original products: Oranges (pocket), Apples (kg), Bananas (bunch), Pineapples (each), Grapes, Potatoes, Cabbage, Garlic, Onions (pocket), Tomatoes, Carrots (kg), Peppers (kg), Dry Beans (kg), and Mixed Dry Fruits (pack).
-  - Listed the confirmed potato products as a 7 kg bag at N$110.00 and a 10 kg bag at N$155.00; the 7 kg size was confirmed by the customer after the supplied potato photo showed a 7 kg sack.
-  - Listed a Tomato crate at N$330.00, Maize 50 kg bag at N$350.00, Dates per bag at N$10.00, Grapes per bag at N$20.00, Cabbage per head at N$20.00–N$25.00, and Garlic per bag at N$10.00.
+  - Provided Shop page navigation and category filters All, Fruits, Vegetables, Dry Fruits, and Grains. The catalog includes Onions (pocket), Apples (kg), Grapes (bag), Potatoes (7 kg bag and 10 kg bag), Cabbage (head), Garlic (bag), Tomato crate, Carrots (kg), Dates (bag), and Maize (50 kg bag).
+  - At the user's request, use the former Oranges listing's photo and product entry as Onions, and remove the duplicate previous Onions entry.
+  - Remove Bananas, Pineapples, Dry Beans, Peppers, and Mixed Dry Fruits from the Shop catalog; do not show a Beans filter when no bean products remain.
+  - List the confirmed potato products as a 7 kg bag at N$110.00 and a 10 kg bag at N$155.00; list a Tomato crate at N$330.00, Maize 50 kg bag at N$350.00, Dates per bag at N$10.00, Grapes per bag at N$20.00, Cabbage per head at N$20.00–N$25.00, and Garlic per bag at N$10.00.
   - Do not invent prices for products without a customer-specified price; identify them as “Price confirmed on WhatsApp.”
   - Use the supplied archive photos for Carrots, the 7 kg Potatoes bag, Grapes, Dates, and the Tomato crate; use existing suitable site photos for other products where available. Do not show product emojis on Shop cards or in the basket.
 - [x] Basket quantity review, price summary, and WhatsApp order handoff
   - Let customers review chosen items and quantities, change quantities, and remove items; show an empty-basket message when there are no items.
+  - When loading the saved basket, carry former Oranges quantities into the renamed Onions listing, merge duplicate quantities, and discard entries for products removed from the Shop.
   - Generate a WhatsApp order message that includes each selected product, quantity, and unit, includes specified unit prices and line totals, preserves the N$20.00–N$25.00 Cabbage range without inventing an exact amount, and marks unspecified prices for confirmation.
   - Show a subtotal for items with listed prices when unpriced products are also selected; exclude unpriced items and identify that exclusion. Open WhatsApp to the original business number (+264814307010).
 - [x] About, contact, and hours information
